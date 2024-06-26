@@ -1,0 +1,396 @@
+:root {
+  --primary-color: white;
+  --paragraph-color: whitesmoke;
+  --bg-color: #130d14;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: var(--bg-color);
+  scroll-behavior: smooth;
+  color: var(--primary-color);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+}
+
+.logo {
+  margin: 1rem 1rem;
+  font-size: larger;
+}
+
+.menu-items {
+  display: flex;
+  gap: 3rem;
+  font-size: larger;
+  margin: 1rem 3rem;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+#desktop-nav li:hover {
+  text-decoration: none;
+  list-style: none;
+  transform: scale(1.5);
+  cursor: pointer;
+  color: var(--paragraph-color);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hamburger */
+
+section{
+    height: 90vh;
+    width: auto;
+    margin-bottom: 10vh;
+}
+
+
+.hamburger-menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.versus-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+  width: 90%;
+  max-width: 25rem;
+  color: var(--primary-color);
+  margin: 1rem auto 0;
+  padding: 2rem 1.8rem;
+  text-align: center;
+  border-radius: 1.9rem;
+  position: relative;
+}
+
+#kuyaKim{
+  background: linear-gradient(135deg ,#EB4174 ,#FFE3E3);
+}
+
+#mangTani{
+  background: linear-gradient(45deg ,#d0f4f4 ,#7d99d0);
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 1rem 1.2rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    flex: 1;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.search-btn{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 8rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.search-btn svg{
+    width: 3rem;
+    height: 1rem;
+    color:  #555;
+}
+.search-btn2{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 8rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.search-btn2 svg{
+    width: 3rem;
+    height: 1rem;
+    color:  #555;
+}
+
+.weather-icon{
+  width: 8rem;
+  height: 8rem;
+  margin: 2.5rem  0  1.5rem 0 ;
+}
+.search2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search2 input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 1rem 1.2rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    flex: 1;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.search2-btn{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 8rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.search2-btn svg{
+    width: 3rem;
+    height: 1rem;
+    color:  #555;
+}
+
+.weather-icon2{
+  width: 8rem;
+  height: 8rem;
+  margin: 2.5rem  0  1.5rem 0 ;
+}
+
+
+.temp{
+  margin-top: -1rem;
+  font-size: 2.5em;
+  font-weight: 600;
+  opacity: 0.9;
+
+}
+
+.city{
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.wind{
+  font-weight: 600;
+font-size: 1.4rem;
+opacity: 0.8;
+margin-left: -0.3rem;
+}
+
+.humidity{
+  font-weight: 600;
+font-size: 1.4rem;
+opacity: 0.8;
+}
+
+.weather-stats img{
+  width: 4rem;
+  height: 4rem;
+}
+
+.weather-detailAndStats{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin-top: 5rem;
+}
+
+.weather-stats{
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 0.3rem;
+}
+
+.temp2{
+  margin-top: -1rem;
+  font-size: 2.5em;
+  font-weight: 600;
+  opacity: 0.9;
+
+}
+
+.city2{
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+
+.wind2{
+  font-weight: 600;
+font-size: 1.4rem;
+opacity: 0.8;
+margin-left: -0.3rem;
+}
+
+.humidity2{
+  font-weight: 600;
+font-size: 1.4rem;
+opacity: 0.8;
+}
+
+
+
+
+
+.label{
+  font-weight: 400;
+font-size: 1rem;
+opacity: 0.7;
+}
+
+.kim{
+  position: absolute;
+  left: -12rem;
+  top: 12rem;
+}
+
+.kim img{
+  width: 29rem;
+  height: 20rem;
+}
+
+.tani{
+  position: absolute;
+  right: -7.5rem;
+  top: 9.5rem;
+}
+
+.tani img{
+  width: 29rem;
+  height: 20rem;
+}
+
+.banner{
+  font-size: 8rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#kimcard{
+  background: linear-gradient(135deg ,#FFE3E3 ,#EB4174 );
+}
+
+#tanicard{
+  background: linear-gradient(135deg ,#d0f4f4  , #7d99d0);
+}
+
+.resume{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+
+.results__card{
+  max-width: 90vh;
+  margin: 1rem auto 0;
+  padding: 2rem 1.8rem;
+  text-align: center;
+  border-radius: 1.9rem;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 1.6rem;
+  
+}
+
+.results__card img{
+width: 15rem;
+height: 15rem;
+border-radius: 15%;
+box-shadow: rgba(0,0,0,0.5);
+}
+
+.results__resume{
+padding: 0 2rem;
+ width: auto;
+}
+
+.results__resume li{
+text-align: left;
+}
+
+#results h1{
+  text-align: center;
+}
+
+.peace__card img{
+  width: 35rem;
+height: 35rem;
+border-radius: 15%;
+box-shadow: rgba(0,0,0,0.5);
+}
+
+#peace__card-bg{
+  background-color: #7d99d0;
+  border-radius: 5rem;
+}
+
+#goongyoo{
+  width: 40rem;
+}
+
+#banner__blue{
+  color: rgb(14, 14, 255);
+}
+
+#banner__yellow{
+  color: rgb(253, 253, 14);
+}
+
+#banner__red{
+  color: rgb(205, 4, 4);
+}
+
+.weather-details{
+  display: none;
+}
+.weather-details2{
+  display: none;
+}
+
+.error{
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 0.6rem;
+  display: none;
+}
+.error2{
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 0.6rem;
+  display: none;
+}

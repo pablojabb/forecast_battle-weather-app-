@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav" class="nav">
+      <div class="logo"><h1>Forecast Battle</h1></div>
+      <div class="menu-items">
+        <li >Kuya Kim</li>
+        <li >Mang Tani</li>
+        <li onclick=" location.href='#battleStats'">Battle Stats</li>
+        <li onclick=" location.href='#results'">Results</li>
+      </div>
+    </nav>
+    <!-- <nav id="hamburger-nav" class="nav">
+      <div class="logo"><h1>Forecast Battle</h1></div>
+      <div class="hamburger-menu-items">
+        <li onclick=" location.href='#kuyaKim'">Kuya Kim</li>
+        <li onclick=" location.href='#mangTani'">Mang Tani</li>
+        <li onclick=" location.href='#results'">Results</li>
+      </div>
+    </nav> -->
+
+    <section class="versus-container">
+      <div id="kuyaKim" class="card">
+        <div class="search">
+          <input
+            class="search-input"
+            type="text"
+            placeholder="Manila"
+            spellcheck="false"
+          />
+          <button class="search-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 512 512"
+              class="icon"
+            >
+              <path
+                fill="currentColor"
+                d="M456.69 421.39L362.6 327.3a173.8 173.8 0 0 0 34.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.8 173.8 0 0 0 327.3 362.6l94.09 94.09a25 25 0 0 0 35.3-35.3M97.92 222.72a124.8 124.8 0 1 1 124.8 124.8a124.95 124.95 0 0 1-124.8-124.8"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="error">
+          <p>Invalid City Name</p>
+        </div>
+        <div class="weather-details">
+          <img
+            src="/assets/mist.png"
+            alt="weather icon"
+            class="weather-icon"
+          />
+          <h1 class="temp">69°c</h1>
+          <h3 class="city">Biringan City</h3>
+
+          <div class="weather-detailAndStats">
+            <div class="weather-stats">
+              <img src="assets/humid.png" alt="" srcset="" />
+              <div>
+                <p class="humidity">50%</p>
+                <p class="label">Humidty</p>
+              </div>
+            </div>
+            <div class="weather-stats">
+              <img src="assets/windspeed.png" alt="" srcset="" />
+              <div>
+                <p class="wind">15 km/h</p>
+                <p class="label">Wind Speed</p>
+              </div>
+            </div>
+            <div class="kim">
+              <img src="assets/kuyakim.png" alt="Kuya kim pic" >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div><h1 class="banner">VS</h1></div>
+      <div id="mangTani" class="card">
+        <div class="search2">
+          <input
+            class="search-input"
+            type="text"
+            placeholder="New York "
+            spellcheck="false"
+          />
+          <button class="search-btn2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 512 512"
+              class="icon"
+            >
+              <path
+                fill="currentColor"
+                d="M456.69 421.39L362.6 327.3a173.8 173.8 0 0 0 34.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.8 173.8 0 0 0 327.3 362.6l94.09 94.09a25 25 0 0 0 35.3-35.3M97.92 222.72a124.8 124.8 0 1 1 124.8 124.8a124.95 124.95 0 0 1-124.8-124.8"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="error2">
+          <p>Invalid City Name</p>
+        </div>
+        <div class="weather-details2">
+          <img
+            src="/assets/mist.png"
+            alt="weather icon"
+            class="weather-icon2"
+          />
+          <h1 class="temp2">38°c</h1>
+          <h3 class="city2">Niqqer City</h3>
+
+          <div class="weather-detailAndStats">
+            <div class="weather-stats">
+              <img src="assets/humid.png" alt="" srcset="" />
+              <div>
+                <p class="humidity2">28%</p>
+                <p class="label">Humidty</p>
+              </div>
+            </div>
+            <div class="weather-stats">
+              <img src="assets/windspeed.png" alt="" srcset="" />
+              <div>
+                <p class="wind2">45km/h</p>
+                <p class="label">Wind Speed</p>
+              </div>
+            </div>
+            <div class="tani">
+              <img src="assets/mangTani.png" alt="Kuya kim pic" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="battleStats" class="resume">
+      <div id="kimcard" class="results__card">
+        <div class="results__pic-cotainer">
+          <img src="assets/kimpfp.jpg" alt="Kuya kim" >
+        </div>
+        <div class="results__resume">
+          <h1>Alejandro Ilagan Atienza </h1>
+          <ol>
+            <li><br></li>
+            <li>Nickname: Kuya Kim</li>
+            <li>Iconic Line: Ang buhay ay Weather Weather lang.</li>
+            <li>Age:57</li>
+            <li>Spouse: Felicia Hung</li>
+            <li>Alma Mater: UP Diliman</li>
+            <li>Occupation: Television Presenter</li>
+            <li>Recent Award: 29th Star Awards for Best Education Program Host</li>
+          </ol>
+        </div>
+      </div>
+      <div><h1 class="banner">VS</h1></div>
+      <div id="tanicard" class="results__card">
+        <div class="results__pic-cotainer">
+          <img src="assets/tanipfp.jpeg" alt="Mang Tani" >
+        </div>
+        <div class="results__resume">
+          <h1>Nathaniel Augustin Cruz</h1>
+          <ol>
+            <li><br></li>
+            <li>Nickname: Mang Tani</li>
+            <li>Iconic Line: Magplano, Magsiguro, Makibalita sa GMA weather.</li>
+            <li>Age:64</li>
+            <li>Spouse: Gloria Cruz</li>
+            <li>Alma Mater: UP Diliman</li>
+            <li>Occupation: Meteorologist, Television Host</li>
+            <li>Recent Award: Philippine Wind Vane Award</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" class="versus-container">
+
+      <div id="peace__card-bg" class="peace__card">
+        <img id="goongyoo" src="assets/meet_the__kuyangbayan__kim_atienza__gong_yoo__1633321397-Photoroom.png" alt="kuya gongyoo" >
+      </div>
+      <div><h1 class="banner"><span id="banner__blue">PEACE</span>  <br> <span id="banner__yellow"> NOT</span> <br><span id="banner__red">WAR</span> </h1></div>
+      <div class="peace__card">
+        <img src="assets/peace.jpg" alt="Tani X kim" >
+      </div>
+    </section>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
